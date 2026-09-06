@@ -2,6 +2,7 @@
 
 # Integrantes
 Nome..: David Lucas Rodrigues Antunes     R.A.: 291220-2025
+
 Turma.: ESW 4 B
 
 | **#** | **Exercício** | **Arquivo e linha** | **O que aparece na tela** |

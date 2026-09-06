@@ -19,6 +19,7 @@ class Produto {
 
   //FUNÇÃO PARA VISUALIZAÇÃO DO PRODUTO
   void view() {
+    print('\n');
     print('Nome.......: $nome');
     print('Descrição..: $descricao');
     print('Quantidade.: $quantidade');
