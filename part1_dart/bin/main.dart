@@ -62,4 +62,20 @@ void main() {
   print('\n');
   pedido.apresentar();
   print('\n');
+
+  //BLOCO DEMONSTRATIVO 4
+  print('===== [4] ENCAPSULAMENTO =====');
+  print('\n');
+  print('Quantidade de itens no pedido (antes): ${pedido.quantidadeItens}');
+
+  final produto3 = Produto(
+    nome: 'Mousepad Gamer',
+    descricao: 'Mousepad XL costurado',
+    quantidade: 1,
+    valor: 49.90,
+  );
+  pedido.adicionarProduto(produto3);
+
+  print('Quantidade de itens no pedido (depois): ${pedido.quantidadeItens}');
+  print('\n');
 }

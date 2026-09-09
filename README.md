@@ -10,7 +10,7 @@ Turma.: ESW 4 B
 | 1 | Entidade principal | part1_dart/bin/models/produto.dart | Bloco `[1]` do relatório |
 | 2 | Herança | part1_dart/bin/models/servico.dart | Bloco `[2]` do relatório |
 | 3 | Composição | part1_dart/bin/models/pedido.dart | Bloco `[3]` do relatório |
-| 4 | Encapsulamento |  | Bloco `[4]` e o total no topo da tela de lista |
+| 4 | Encapsulamento | part1_dart/bin/models/pedido.dart | Bloco `[4]` do relatório (total no topo da tela de lista fica para os exercícios 5-7) |
 | 5 | Estrutura de tela |  | AppBar e corpo da tela inicial |
 | 6 | Cartão |  | Cada item da lista |
 | 7 | Lista |  | Lista rolável com seis itens |
