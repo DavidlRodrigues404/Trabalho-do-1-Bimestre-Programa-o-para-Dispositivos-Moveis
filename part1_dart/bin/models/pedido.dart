@@ -15,6 +15,11 @@ class Pedido { Pedido({
 
   int get quantidadeItens => _produtos.length + _servicos.length;
 
+  List<Produto> get itens => [..._produtos, ..._servicos];
+
+  double get valorTotal =>
+      itens.fold(0.0, (soma, item) => soma + item.valor);
+
   void adicionarProduto(Produto produto){
   _produtos.add(produto);
   }
