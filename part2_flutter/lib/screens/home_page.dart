@@ -5,6 +5,7 @@ import '../models/pedido.dart';
 import '../models/produto.dart';
 import '../models/servico.dart';
 import '../widgets/item_card.dart';
+import 'detail_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -65,6 +66,12 @@ class _HomePageState extends State<HomePage> {
     ));
   }
 
+  void _abrirDetalhe(BuildContext context, Produto item) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => DetailPage(item: item)),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,7 +100,10 @@ class _HomePageState extends State<HomePage> {
               itemCount: pedido.itens.length,
               itemBuilder: (context, index) {
                 final item = pedido.itens[index];
-                return ItemCard(item: item);
+                return GestureDetector(
+                  onTap: () => _abrirDetalhe(context, item),
+                  child: ItemCard(item: item),
+                );
               },
             ),
           ),
