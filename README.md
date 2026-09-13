@@ -11,11 +11,11 @@ Turma.: ESW 4 B
 | 2 | Herança | part1_dart/bin/models/servico.dart | Bloco `[2]` do relatório |
 | 3 | Composição | part1_dart/bin/models/pedido.dart | Bloco `[3]` do relatório |
 | 4 | Encapsulamento | part1_dart/bin/models/pedido.dart | Bloco `[4]` e o total no topo da tela de lista |
-| 5 | Estrutura de tela | part2_flutter/lib/screens/home_page.dart:77-83 | AppBar e corpo da tela inicial |
+| 5 | Estrutura de tela | part2_flutter/lib/screens/home_page.dart:90-100 | AppBar e corpo da tela inicial |
 | 6 | Cartão | part2_flutter/lib/widgets/item_card.dart:14-22 | Cada item da lista |
-| 7 | Lista | part2_flutter/lib/screens/home_page.dart:98-109 | Lista rolável com seis itens |
-| 8 | Navegação | part2_flutter/lib/screens/home_page.dart:103-106 e screens/detail_page.dart | Toque no item abre o detalhe |
-| 9 | Formulário |  | Tela de cadastro |
-| 10 | Estado |  | Item novo na lista e total atualizado |
+| 7 | Lista | part2_flutter/lib/screens/home_page.dart:115-126 | Lista rolável com seis itens |
+| 8 | Navegação | part2_flutter/lib/screens/home_page.dart:120-123 e screens/detail_page.dart | Toque no item abre o detalhe |
+| 9 | Formulário | part2_flutter/lib/screens/cadastro_page.dart | Tela de cadastro |
+| 10 | Estado | part2_flutter/lib/screens/home_page.dart:76-86 | Item novo na lista e total atualizado |
 
 3 - A relação da 3 não é uma herança pois nenhuma das classes esta ligada de alguma forma como na classe servico, diferente de serviço aqui as 3 classes compoem a classe pedido informando o cliente e formando a listagem do pedido com produtos e/ou serviços. 

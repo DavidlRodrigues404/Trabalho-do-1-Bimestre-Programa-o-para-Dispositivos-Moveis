@@ -5,6 +5,7 @@ import '../models/pedido.dart';
 import '../models/produto.dart';
 import '../models/servico.dart';
 import '../widgets/item_card.dart';
+import 'cadastro_page.dart';
 import 'detail_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -72,11 +73,27 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Future<void> _abrirCadastro(BuildContext context) async {
+    final novoProduto = await Navigator.of(context).push<Produto>(
+      MaterialPageRoute(builder: (_) => const CadastroPage()),
+    );
+
+    if (novoProduto != null) {
+      setState(() {
+        pedido.adicionarProduto(novoProduto);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pedido Atual'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => _abrirCadastro(context),
+        child: const Icon(Icons.add),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
