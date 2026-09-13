@@ -11,9 +11,9 @@ Turma.: ESW 4 B
 | 2 | Herança | part1_dart/bin/models/servico.dart | Bloco `[2]` do relatório |
 | 3 | Composição | part1_dart/bin/models/pedido.dart | Bloco `[3]` do relatório |
 | 4 | Encapsulamento | part1_dart/bin/models/pedido.dart | Bloco `[4]` e o total no topo da tela de lista |
-| 5 | Estrutura de tela |  | AppBar e corpo da tela inicial |
-| 6 | Cartão |  | Cada item da lista |
-| 7 | Lista |  | Lista rolável com seis itens |
+| 5 | Estrutura de tela | part2_flutter/lib/screens/home_page.dart:69-75 | AppBar e corpo da tela inicial |
+| 6 | Cartão | part2_flutter/lib/widgets/item_card.dart:14-22 | Cada item da lista |
+| 7 | Lista | part2_flutter/lib/screens/home_page.dart:90-100 | Lista rolável com seis itens |
 | 8 | Navegação |  | Toque no item abre o detalhe |
 | 9 | Formulário |  | Tela de cadastro |
 | 10 | Estado |  | Item novo na lista e total atualizado |
