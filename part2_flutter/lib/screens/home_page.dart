@@ -4,6 +4,7 @@ import '../models/cliente.dart';
 import '../models/pedido.dart';
 import '../models/produto.dart';
 import '../models/servico.dart';
+import '../widgets/item_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -92,10 +93,7 @@ class _HomePageState extends State<HomePage> {
               itemCount: pedido.itens.length,
               itemBuilder: (context, index) {
                 final item = pedido.itens[index];
-                return ListTile(
-                  title: Text(item.nome),
-                  subtitle: Text('R\$ ${item.valor.toStringAsFixed(2)}'),
-                );
+                return ItemCard(item: item);
               },
             ),
           ),
